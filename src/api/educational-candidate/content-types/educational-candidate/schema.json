@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educational_candidates",
+  "info": {
+    "singularName": "educational-candidate",
+    "pluralName": "educational-candidates",
+    "displayName": "Educational Candidate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "institute": {
+      "type": "string",
+      "required": true
+    },
+    "degree": {
+      "type": "string"
+    },
+    "from": {
+      "type": "date"
+    },
+    "to": {
+      "type": "date"
+    },
+    "current": {
+      "type": "boolean"
+    },
+    "candidate": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::candidate.candidate",
+      "inversedBy": "educational_candidates"
+    }
+  }
+}
