@@ -31,12 +31,9 @@ export default {
     },
     // Extend the translations
     translations: {
-      fr: {
-        'Auth.form.email.label': 'test',
-        Users: 'Utilisateurs',
-        City: 'CITY (FRENCH)',
-        // Customize the label of the Content Manager table.
-        Id: 'ID french',
+      en: {
+        "app.components.LeftMenu.navbrand.title": "Tecooli Dashboard",
+        // "app.components.LeftMenu.navbrand.workplace": "...",
       },
     },
    // Disable video tutorials

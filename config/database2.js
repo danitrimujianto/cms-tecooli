@@ -4,11 +4,10 @@ module.exports = ({ env }) => ({
     connection: {
       host: env('DATABASE_HOST', '127.0.0.1'),
       port: env.int('DATABASE_PORT', 9010),
-      database: env('DATABASE_NAME', 'cms-new'),
-      user: env('DATABASE_USERNAME', 'tecooli'),
-      password: env('DATABASE_PASSWORD', 'tecooli123'),
+      database: env('DATABASE_NAME', 'cms-tecooli'),
+      user: env('DATABASE_USERNAME', 'postgres'),
+      password: env('DATABASE_PASSWORD', 'Dani020194'),
       ssl: env.bool('DATABASE_SSL', false),
     },
-    useNullAsDefault: true,
   },
 });
